@@ -9,5 +9,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="com.wangxiaoguang.sageminttheme" path="/themes/sage-mint.theme.json"/>
         <bundledColorScheme id="Sage Mint" path="/colorSchemes/SageMint"/>
+        <themeProvider id="com.wangxiaoguang.sageminttheme.night" path="/themes/sage-mint-night.theme.json"/>
+        <bundledColorScheme id="Sage Mint Night" path="/colorSchemes/SageMintNight"/>
     </extensions>
 </idea-plugin>
