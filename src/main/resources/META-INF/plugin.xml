@@ -2,7 +2,7 @@
     <id>com.wangxiaoguang.sageminttheme</id>
     <name>Sage Mint Theme</name>
 
-    <vendor url="https://github.com/wangxiaoguang">wangxiaoguang</vendor>
+    <vendor url="https://github.com/vectorstone/SageMintTheme">vectorstone</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
