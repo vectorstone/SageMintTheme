@@ -1,0 +1,13 @@
+<idea-plugin>
+    <id>com.wangxiaoguang.sageminttheme</id>
+    <name>Sage Mint Theme</name>
+
+    <vendor url="https://github.com/wangxiaoguang">wangxiaoguang</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="com.wangxiaoguang.sageminttheme" path="/themes/sage-mint.theme.json"/>
+        <bundledColorScheme id="Sage Mint" path="/colorSchemes/SageMint"/>
+    </extensions>
+</idea-plugin>

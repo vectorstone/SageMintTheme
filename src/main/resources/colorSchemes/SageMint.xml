@@ -1,0 +1,69 @@
+<scheme name="Sage Mint" version="142" parent_scheme="Default">
+  <metaInfo>
+    <property name="created">2026-03-21T00:00:00</property>
+    <property name="modified">2026-03-21T00:00:00</property>
+    <property name="ide">idea</property>
+    <property name="ideVersion">2024.1</property>
+    <property name="originalScheme">Default</property>
+  </metaInfo>
+  <colors>
+    <option name="CARET_COLOR" value="233326" />
+    <option name="CARET_ROW_COLOR" value="D7F0D5" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="BFE2BE" />
+    <option name="EDITOR_GUTTER_BACKGROUND" value="CAE8CA" />
+    <option name="GUTTER_BACKGROUND" value="CAE8CA" />
+    <option name="INDENT_GUIDE" value="8FBD8E" />
+    <option name="LINE_NUMBERS_COLOR" value="5B6E5F" />
+    <option name="METHOD_SEPARATORS_COLOR" value="8FBD8E" />
+    <option name="NOTIFICATION_BACKGROUND" value="D7F0D5" />
+    <option name="READONLY_BACKGROUND" value="D7F0D5" />
+    <option name="RIGHT_MARGIN_COLOR" value="8FBD8E" />
+    <option name="SELECTION_BACKGROUND" value="94C694" />
+    <option name="SELECTION_FOREGROUND" value="233326" />
+    <option name="TEARLINE_COLOR" value="8FBD8E" />
+    <option name="VISUAL_INDENT_GUIDE" value="8FBD8E" />
+    <option name="WHITESPACES" value="8FBD8E" />
+  </colors>
+  <attributes>
+    <option name="TEXT">
+      <value>
+        <option name="FOREGROUND" value="233326" />
+        <option name="BACKGROUND" value="BFE2BE" />
+      </value>
+    </option>
+    <option name="CARET_ROW">
+      <value>
+        <option name="BACKGROUND" value="D7F0D5" />
+      </value>
+    </option>
+    <option name="LINE_NUMBERS">
+      <value>
+        <option name="FOREGROUND" value="5B6E5F" />
+        <option name="BACKGROUND" value="CAE8CA" />
+      </value>
+    </option>
+    <option name="LINE_NUMBER_ON_CARET_ROW">
+      <value>
+        <option name="FOREGROUND" value="233326" />
+        <option name="BACKGROUND" value="CAE8CA" />
+      </value>
+    </option>
+    <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
+      <value>
+        <option name="EFFECT_COLOR" value="5E8C63" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="A9D4A9" />
+      </value>
+    </option>
+    <option name="SEARCH_RESULT_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="DDECA3" />
+        <option name="FOREGROUND" value="233326" />
+      </value>
+    </option>
+  </attributes>
+</scheme>
