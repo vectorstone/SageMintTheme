@@ -1,43 +1,49 @@
 # Sage Mint Theme
 
-Sage Mint Theme is a static IntelliJ Platform theme plugin for the 2025.3 Islands UI. It uses
-`#BFE2BE` as the fixed background anchor color across the IDE shell and editor surfaces.
+Sage Mint Theme is a static IntelliJ Platform theme plugin for the 2025.3 Islands UI. It now
+ships with both a light mint variant and a dark `Sage Mint Night` variant built around the same
+calm green visual direction.
 
 ## Preview
 
-- Base theme: `Islands Light`
-- Fixed palette: `#BFE2BE`
+- Base themes: `Sage Mint` and `Sage Mint Night`
+- UI target: IntelliJ IDEA `2025.3` Islands UI
 - Delivery target: local installable plugin package and JetBrains Marketplace-ready metadata
 
 ## Features
 
-- Islands-aware backgrounds for the main IDE shell, tool windows, tabs, dialogs, and inputs
-- Matching static editor scheme so the editor canvas stays aligned with the mint UI palette
-- No runtime configuration logic, which keeps the theme behavior predictable
+- A mint light theme for the new Islands UI
+- A matching `Sage Mint Night` dark theme
+- Separate bundled editor schemes for both light and night variants
+- Static theme behavior with no runtime configuration logic
 
 ## Marketplace Description
 
-Sage Mint Theme is a clean static theme for IntelliJ IDEA 2025.3 and newer. It brings the new
-Islands UI into a soft mint palette centered on `#BFE2BE`, while keeping editor surfaces,
-tool windows, tabs, menus, and popup panels visually consistent.
+Sage Mint Theme is a static theme plugin for IntelliJ IDEA 2025.3 and newer, designed for the
+new Islands UI.
 
-The goal is simple: a calm green workspace without dynamic settings, without mode switches, and
-without visual noise. Install the theme, select `Sage Mint Theme`, and the IDE adopts a unified
-mint color line with a matching `Sage Mint` editor color scheme.
+Version 0.3.0 introduces `Sage Mint Night`, a dark companion to the original mint light theme.
+Together they provide a consistent green visual identity across the IDE shell, tool windows,
+tabs, dialogs, popups, and editor surfaces.
+
+The plugin keeps the experience simple: install it, choose either `Sage Mint` or `Sage Mint Night`,
+and use the matching bundled editor color scheme for a coherent workspace.
 
 Highlights:
 
-- Built for the 2025.3 Islands UI
-- Unified mint palette anchored by `#BFE2BE`
-- Matching static editor scheme
-- Simple static theme behavior with no runtime configuration
+- Built for IntelliJ IDEA 2025.3 Islands UI
+- Includes both light and dark mint theme variants
+- Matching bundled editor color schemes
+- Static behavior with no runtime settings or mode switching logic
 
 ## Development
 
-This project uses the IntelliJ Platform Gradle Plugin.
+This project uses the IntelliJ Platform Gradle Plugin and requires Java 21.
 
 ```bash
-export JAVA_HOME="$HOME/.sdkman/candidates/java/17.0.15-amzn"
+export JAVA_HOME="$(cd /opt/homebrew/opt/sdkman-cli/libexec/candidates/java/current && pwd -P)"
+export PATH="$JAVA_HOME/bin:$PATH"
+
 ./gradlew runIde
 ./gradlew buildPlugin
 ```
@@ -50,36 +56,38 @@ Update `pluginVersion` in `gradle.properties` before each release, then prepare 
 JetBrains Marketplace environment variables:
 
 ```bash
-export JAVA_HOME="$HOME/.sdkman/candidates/java/17.0.15-amzn"
-export CERTIFICATE_CHAIN="$(cat path/to/chain.crt)"
-export PRIVATE_KEY="$(cat path/to/private.pem)"
+export JAVA_HOME="$(cd /opt/homebrew/opt/sdkman-cli/libexec/candidates/java/current && pwd -P)"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+export CERTIFICATE_CHAIN="$(cat /absolute/path/to/chain.crt)"
+export PRIVATE_KEY="$(cat /absolute/path/to/private.pem)"
 export PRIVATE_KEY_PASSWORD="your-private-key-password"
 export PUBLISH_TOKEN="your-marketplace-token"
 ```
 
-Build, sign, and publish with:
+Build, sign, verify, and publish with:
 
 ```bash
 ./gradlew buildPlugin
 ./gradlew signPlugin
+./gradlew verifyPlugin
 ./gradlew publishPlugin
 ```
-
-For a first Marketplace release, upload the signed ZIP manually in the Marketplace web UI first.
-After the plugin entry exists, `publishPlugin` can be used for subsequent releases.
 
 Release checklist:
 
 ```bash
 # 1. bump pluginVersion in gradle.properties
-# 2. rebuild
-./gradlew buildPlugin
+# 2. update changelog and marketplace copy
 
-# 3. sign locally
+# 3. build and sign
+./gradlew buildPlugin
 ./gradlew signPlugin
 
-# 4. first release: upload signed ZIP in Marketplace web UI
-# 5. later releases: publish with Gradle
+# 4. verify compatibility
+./gradlew verifyPlugin
+
+# 5. publish to JetBrains Marketplace
 ./gradlew publishPlugin
 ```
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- Added the new `Sage Mint Night` dark theme for IntelliJ IDEA 2025.3 Islands UI.
+- Added a matching `Sage Mint Night` editor color scheme.
+- Kept the original `Sage Mint` theme as the light variant for a complete light/night pair.
+
 ## 0.2.0
 
 - Simplified the plugin to a single static Islands Light theme.

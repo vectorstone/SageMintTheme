@@ -35,14 +35,15 @@ intellijPlatform {
         version = providers.gradleProperty("pluginVersion")
 
         description = """
-            A static IntelliJ IDEA theme for the 2025.3 Islands UI built around the mint
-            background color #BFE2BE.
+            A static IntelliJ IDEA theme plugin for the 2025.3 Islands UI with mint light
+            and night variants, built around the Sage Mint palette.
         """.trimIndent()
 
         changeNotes = """
             <ul>
-              <li>Simplified the plugin to a single static Islands Light theme.</li>
-              <li>Kept the fixed mint palette anchored by #BFE2BE.</li>
+              <li>Added the new <b>Sage Mint Night</b> dark theme for the 2025.3 Islands UI.</li>
+              <li>Added a matching <b>Sage Mint Night</b> editor color scheme.</li>
+              <li>Kept the original mint theme as the light variant for a complete light/night pair.</li>
             </ul>
         """.trimIndent()
 
